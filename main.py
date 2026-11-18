@@ -247,6 +247,11 @@ def render():
     c.fill_rect(dx + 34, dy, 30, 4, SILVER)
     c.fill_rect(dx - 12, dy + 22, 30, 4, SILVER)
     c.fill_rect(dx + 34, dy + 22, 30, 4, SILVER)
+    # Legend for the radar blips, filling the empty right of the panel.
+    c.fill_rect(dx + 4, dy + 76, 10, 10, GREEN)
+    c.draw_text(dx + 20, dy + 76, "CONTACT", 2, STEEL)
+    c.fill_rect(dx + 4, dy + 104, 10, 10, RED)
+    c.draw_text(dx + 20, dy + 104, "HOSTILE", 2, STEEL)
     c.draw_text(px + 14, 386, "RADAR SCREEN: BAHRAIN", 2, STEEL)
 
     c.draw_text(px, 432, "A US RADAR SITE IN BAHRAIN", 2, GRAY)
